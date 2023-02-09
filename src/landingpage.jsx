@@ -1,56 +1,127 @@
 import "./landingpage.css";
+import anonymousLogo from './assets/anonymous.png'
+import facebookLogo from './assets/facebook.svg'
+import twitterLogo from './assets/twitter.svg'
+import instagramLogo from './assets/instagram.svg'
 
 function Page() {
   return (
     <>
-     <div id="testando">
-        <div><img id="imagem"
-            src="./assets/anonymous.png"
-            alt=""/>
+      <div id="testando">
+        <div>
+          <img src={anonymousLogo} id="imagem"  alt="" />
         </div>
         <div id="teste">
+          <div>
+            <h1>Tópicos</h1>
+          </div>
+          <div className="principal">
             <div>
-                <h1>Tópicos</h1>
+              <ul>
+                <h2 className="temas">técnologia</h2>
+                <li>
+                  <a></a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </div>
-            <div>            
-                <p>asdasd</p>
-                <p>asdasd</p>
-                <p>asdasd</p>
-                <p>asdasd</p>
-                <p>asdasd</p>
-                <p>asdasd</p>
-                <p>asdasd</p>
-                <p>asdasd</p>
+            <div>
+              <ul>
+                <h2 className="temas">técnologia</h2>
+                <li>
+                  <a></a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </div>
+            <div>
+              <ul>
+                <h2 className="temas">técnologia</h2>
+                <li>
+                  <a></a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <h2 className="temas">técnologia</h2>
+                <li>
+                  <a></a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
-    <div className="container">
+      </div>
+      <div className="container">
         <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div className="col-md-4 d-flex align-items-center">
-                <a href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                    <img src="./assets/anonymous.png"
-                        className="bi" width="30" height="24"/>
-                    <use xlinkHref="#bootstrap"></use>
-                </a>
-                <span className="mb-3 mb-md-0 text-muted">© 2023 Company, Inc</span>
-            </div>
+          <div className="col-md-4 d-flex align-items-center">
+            <a
+              href="/"
+              className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+            >
+              <img
+                src={anonymousLogo}
+                className="bi"
+                width="30"
+                height="24"
+              />
+              <use xlinkHref="#bootstrap"></use>
+            </a>
+            <span className="mb-3 mb-md-0 text-muted">© 2023 Company, Inc</span>
+          </div>
 
-            <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li className="ms-3"><a className="text-muted" href="#"><img src="./assets/twitter.svg" className="bi" width="5"
-                            height="5"/>
-                        <use xlinkHref="#twitter"></use>
-                    </a></li>
-                <li className="ms-3"><a className="text-muted" href="#"><img src="./assets/instagram.svg" className="bi"
-                            width="5" height="5"/>
-                        <use xlinkHref="#instagram"></use>
-                    </a></li>
-                <li className="ms-3"><a className="text-muted" href="#"><img src="./assets/facebook.svg" className="bi"
-                            width="5" height="5"/>
-                        <use xlinkHref="#facebook"></use>
-                    </a></li>
-            </ul>
+          <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li className="ms-3">
+              <a className="text-muted" href="#">
+                <img
+                  src={twitterLogo}
+                  className="bi"
+                  width="5"
+                  height="5"
+                />
+                <use xlinkHref="#twitter"></use>
+              </a>
+            </li>
+            <li className="ms-3">
+              <a className="text-muted" href="#">
+                <img
+                  src={instagramLogo}
+                  className="bi"
+                  width="5"
+                  height="5"
+                />
+                <use xlinkHref="#instagram"></use>
+              </a>
+            </li>
+            <li className="ms-3">
+              <a className="text-muted" href="#">
+                <img
+                  src={facebookLogo}
+                  className="bi"
+                  width="5"
+                  height="5"
+                />
+                <use xlinkHref="#facebook"></use>
+              </a>
+            </li>
+          </ul>
         </footer>
-    </div>
+      </div>
     </>
   );
 }
