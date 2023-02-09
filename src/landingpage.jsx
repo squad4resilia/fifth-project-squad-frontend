@@ -18,50 +18,42 @@ function Page() {
           <div className="principal">
             <div>
               <ul>
-                <h2 className="temas">técnologia</h2>
-                <li>
-                  <a></a>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-            <div>
-              <ul>
-                <h2 className="temas">técnologia</h2>
-                <li>
-                  <a></a>
-                </li>
-                <li></li>
-                <li></li>
+                <h2 className="temas">💻Técnologia</h2>
+                <li>Programação</li>
+                <li>Jogos</li>
+                <li>Aplicativos</li>
                 <li></li>
                 <li></li>
               </ul>
             </div>
             <div>
               <ul>
-                <h2 className="temas">técnologia</h2>
-                <li>
-                  <a></a>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <h2 className="temas">⚽Esportes</h2>
+                <li>Futebol</li>
+                <li>Basquete</li>
+                <li>Vôlei</li>
+                <li>UFC</li>
+                <li>E-Sports</li>
               </ul>
             </div>
             <div>
               <ul>
-                <h2 className="temas">técnologia</h2>
-                <li>
-                  <a></a>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <h2 className="temas">🍽Culinária</h2>
+                <li>Culinária brasileira</li>
+                <li>Culinária japonesa</li>
+                <li>Culinária mexicana</li>
+                <li>Culinária italiana</li>
+                <li>Culinária francesa</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <h2 className="temas">🎞Filmes</h2>
+                <li>Ação</li>
+                <li>Animado</li>
+                <li>Comédia</li>
+                <li>Ficção científica</li>
+                <li>Romance</li>
               </ul>
             </div>
           </div>
@@ -127,3 +119,4 @@ function Page() {
 }
 
 export default Page;
+
