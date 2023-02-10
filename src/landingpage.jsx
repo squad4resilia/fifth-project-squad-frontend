@@ -13,47 +13,35 @@ function Page() {
         </div>
         <div id="teste">
           <div>
-            <h1>Tópicos</h1>
+            <h1>Topics</h1>
           </div>
           <div className="principal">
             <div>
               <ul>
-                <h2 className="temas">💻Técnologia</h2>
-                <li>Programação</li>
-                <li>Jogos</li>
-                <li>Aplicativos</li>
-                <li></li>
-                <li></li>
+                <h2 className="temas">💻Tech</h2>
+                <li>Programming</li>
+                <li>App</li>
               </ul>
             </div>
             <div>
               <ul>
-                <h2 className="temas">⚽Esportes</h2>
-                <li>Futebol</li>
-                <li>Basquete</li>
-                <li>Vôlei</li>
-                <li>UFC</li>
+                <h2 className="temas">⚽Sports</h2>
+                <li>Soccer</li>
                 <li>E-Sports</li>
               </ul>
             </div>
             <div>
               <ul>
-                <h2 className="temas">🍽Culinária</h2>
-                <li>Culinária brasileira</li>
-                <li>Culinária japonesa</li>
-                <li>Culinária mexicana</li>
-                <li>Culinária italiana</li>
-                <li>Culinária francesa</li>
+                <h2 className="temas">🍽Cooking</h2>
+                <li>Brazillian</li>
+                <li>Japonese</li>
               </ul>
             </div>
             <div>
               <ul>
-                <h2 className="temas">🎞Filmes</h2>
-                <li>Ação</li>
-                <li>Animado</li>
-                <li>Comédia</li>
-                <li>Ficção científica</li>
-                <li>Romance</li>
+                <h2 className="temas">🎞Movies</h2>
+                <li>Action</li>
+                <li>Sci-fi</li>
               </ul>
             </div>
           </div>
@@ -79,7 +67,7 @@ function Page() {
 
           <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li className="ms-3">
-              <a className="text-muted" href="#">
+              <a className="text-muted" href="https://twitter.com/home">
                 <img
                   src={twitterLogo}
                   className="bi"
@@ -90,7 +78,7 @@ function Page() {
               </a>
             </li>
             <li className="ms-3">
-              <a className="text-muted" href="#">
+              <a className="text-muted" href="https://www.instagram.com/">
                 <img
                   src={instagramLogo}
                   className="bi"
@@ -101,7 +89,7 @@ function Page() {
               </a>
             </li>
             <li className="ms-3">
-              <a className="text-muted" href="#">
+              <a className="text-muted" href="https://www.facebook.com/">
                 <img
                   src={facebookLogo}
                   className="bi"
