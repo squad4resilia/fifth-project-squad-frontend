@@ -12,7 +12,7 @@ function Page() {
           <img src={anonymousLogo} id="imagem"  alt="" />
         </div>
         <div id="teste">
-          <div>
+          <div className="topics">
             <h1>Topics</h1>
           </div>
           <div className="principal">

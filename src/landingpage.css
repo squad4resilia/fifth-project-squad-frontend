@@ -39,7 +39,12 @@ li:hover::after{
     flex-direction: column;
     width: 80%;
     height: 80%;
-    margin-bottom: 200px;
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+
+.topics{
+    margin-bottom: 10px;
 }
 
 #testando{
