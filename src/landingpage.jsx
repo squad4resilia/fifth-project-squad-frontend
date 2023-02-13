@@ -1,4 +1,4 @@
-import "./landingpage.css";
+import "./css/landingpage.css";
 import anonymousLogo from './assets/anonymous.png'
 import facebookLogo from './assets/facebook.svg'
 import twitterLogo from './assets/twitter.svg'

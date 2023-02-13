@@ -1,5 +1,5 @@
 import anonymousLogo from './assets/anonymous.png'
-import "./replypage.css";
+import "./css/replypage.css";
 
 function Reply() {
     return (
