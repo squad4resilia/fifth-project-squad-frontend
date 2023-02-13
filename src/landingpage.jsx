@@ -7,10 +7,10 @@ import instagramLogo from './assets/instagram.svg'
 function Page() {
   return (
     <>
-      <div id="testando">
-        <div>
+          <div className="imagem">
           <img src={anonymousLogo} id="imagem"  alt="" />
         </div>
+      <div id="testando">
         <div id="teste">
           <div className="topics">
             <h1>Topics</h1>
