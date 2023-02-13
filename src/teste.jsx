@@ -29,9 +29,9 @@ const Formulario = () => {
     <div class="d-flex border border-dark p-3 m-3" id="container">
 
     <form onSubmit={handleSubmit}>
-      <div class="d-flex align-items-start flex-column p-1">
-        <label htmlFor="thread_author">Author:</label>
-        <input
+      <div class="d-flex align-items-start flex-column p-1 mt-3 mb-3">
+        <label htmlFor="thread_author"></label>
+        <input placeholder='Author'
           type="text"
           id="thread_author"
           name="thread_author"
@@ -39,9 +39,9 @@ const Formulario = () => {
           onChange={handleChange}
         />
       </div>
-      <div class="d-flex align-items-start flex-column p-1">
-        <label htmlFor="thread_subject">Subject:</label>
-        <input
+      <div class="d-flex align-items-start flex-column p-1 mb-3">
+        <label htmlFor="thread_subject"></label>
+        <input placeholder='Subject'
           type="text"
           id="thread_subject"
           name="thread_subject"
@@ -50,9 +50,9 @@ const Formulario = () => {
           required
         />
       </div>
-      <div class="d-flex align-items-start flex-column p-1">
-        <label htmlFor="thread_title">Title:</label>
-        <input
+      <div class="d-flex align-items-start flex-column p-1 mb-3">
+        <label htmlFor="thread_title"></label>
+        <input placeholder='Title'
           type="text"
           id="thread_title"
           name="thread_title"
@@ -62,7 +62,7 @@ const Formulario = () => {
         />
       </div>
       <div class="d-flex align-items-start flex-column pb-2">
-        <label htmlFor="thread_msg">Message:</label>
+        <label htmlFor="thread_msg"></label>
         <textarea placeholder="Digite sua mensagem"
           id="thread_msg"
           name="thread_msg"
@@ -71,7 +71,7 @@ const Formulario = () => {
           required
         />
       </div>
-      <button type="button" class="btn btn-outline-dark" id="botãoTeste">Submit</button>
+      <button type="button" class=" btn btn-outline-dark" id="botãoTeste">Submit</button>
     </form>
     </div>
     </div>
