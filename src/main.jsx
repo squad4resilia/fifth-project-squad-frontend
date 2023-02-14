@@ -6,6 +6,6 @@ import FullPage from './fullpage'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Page/>
+    <FullPage/>
   </React.StrictMode>
 )

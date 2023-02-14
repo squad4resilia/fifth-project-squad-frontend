@@ -22,7 +22,7 @@ const Formulario = () => {
   return (
     <>
     <div className="imagem" >
-    <img src={anonymousLogo} id="imagem"  alt="" to="/landingpage.jsx"/>
+    <img src={anonymousLogo} id="imagem"  alt=""/>
     </div>
 
     <div class="caixaGrande d-flex justify-content-center align-item-center mt-5 mb-5 p-3">
