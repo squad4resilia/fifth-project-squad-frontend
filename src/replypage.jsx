@@ -26,12 +26,15 @@ const Formulario = () => {
     </div>
 
     <div class="caixaGrande d-flex justify-content-center align-item-center mt-5 mb-5 p-3">
-    <div class="d-flex border border-dark p-3 m-3" id="container">
+    <div class="d-flex border border-light p-3 m-3 shadow-lg p-3 mb-5 bg-light rounded" id="container">
 
     <form onSubmit={handleSubmit}>
+      <div>
+        
+      </div>
       <div class="d-flex align-items-start flex-column p-1 mt-3 mb-3">
         <label htmlFor="thread_author"></label>
-        <input placeholder='Author'
+        <input class="border-0 bg-transparent " placeholder='Author'
           type="text"
           id="thread_author"
           name="thread_author"
@@ -41,7 +44,7 @@ const Formulario = () => {
       </div>
       <div class="d-flex align-items-start flex-column p-1 mb-3">
         <label htmlFor="thread_subject"></label>
-        <input placeholder='Subject'
+        <input class="border-0 bg-transparent " placeholder='Subject'
           type="text"
           id="thread_subject"
           name="thread_subject"
@@ -52,7 +55,7 @@ const Formulario = () => {
       </div>
       <div class="d-flex align-items-start flex-column p-1 mb-3">
         <label htmlFor="thread_title"></label>
-        <input placeholder='Title'
+        <input class="border-0 bg-transparent " placeholder='Title'
           type="text"
           id="thread_title"
           name="thread_title"
@@ -63,7 +66,7 @@ const Formulario = () => {
       </div>
       <div class="d-flex align-items-start flex-column pb-2">
         <label htmlFor="thread_msg"></label>
-        <textarea placeholder="Digite sua mensagem"
+        <textarea class="border-0 bg-transparent " placeholder="Type your message"
           id="thread_msg"
           name="thread_msg"
           value={thread.thread_msg}
@@ -71,7 +74,9 @@ const Formulario = () => {
           required
         />
       </div>
-      <button type="button" class=" btn btn-outline-dark" id="botãoTeste">Submit</button>
+      <div class="d-flex justify-content-center">
+      <button type="button" class=" btn btn-outline-dark btn-lg" id="botãoTeste">Submit</button>        
+      </div>
     </form>
     </div>
     </div>

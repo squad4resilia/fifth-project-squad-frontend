@@ -2,17 +2,17 @@
     border-radius: 25px;
 }
 #thread_author{
-    width: 400px;
+    width: 300px;
 }
 #thread_subject{
-    width: 400px;
+    width: 300px;
 }
 #thread_title{
-    width: 400px;
+    width: 300px;
 }
 #thread_msg{
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 100px;
 }
 img{
     width: 30px;
