@@ -1,5 +1,4 @@
-import anonymousLogo from './assets/anonymous.png'
-import "./css/replypage.css";
+import "./css/comentsfullpage.css";
 import React, { useState } from 'react';
 
 const Formulario = () => {
@@ -21,20 +20,13 @@ const Formulario = () => {
 
   return (
     <>
-    <div className="imagem" >
-    <img src={anonymousLogo} id="imagem"  alt=""/>
-    </div>
-
-    <div class="caixaGrande d-flex justify-content-center align-item-center mt-5 mb-5 p-3">
-    <div class="d-flex border border-light p-3 m-3 shadow-lg p-3 mb-5 bg-light rounded" id="container">
+    <div class="caixaGrande d-flex justify-content-center align-item-center mb-5 p-3">
+    <div class="d-flex border border-dark p-3" id="container">
 
     <form onSubmit={handleSubmit}>
-      <div>
-        
-      </div>
-      <div class="d-flex align-items-start flex-column p-1 mt-3 mb-3">
+      <div class="d-flex align-items-start flex-column p-1">
         <label htmlFor="thread_author"></label>
-        <input class="border-0 bg-transparent " placeholder='Author'
+        <input placeholder='Author'
           type="text"
           id="thread_author"
           name="thread_author"
@@ -42,9 +34,9 @@ const Formulario = () => {
           onChange={handleChange}
         />
       </div>
-      <div class="d-flex align-items-start flex-column p-1 mb-3">
+      <div class="d-flex align-items-start flex-column p-1">
         <label htmlFor="thread_subject"></label>
-        <input class="border-0 bg-transparent " placeholder='Subject'
+        <input placeholder='Subject'
           type="text"
           id="thread_subject"
           name="thread_subject"
@@ -53,9 +45,9 @@ const Formulario = () => {
           required
         />
       </div>
-      <div class="d-flex align-items-start flex-column p-1 mb-3">
+      <div class="d-flex align-items-start flex-column p-1">
         <label htmlFor="thread_title"></label>
-        <input class="border-0 bg-transparent " placeholder='Title'
+        <input placeholder='Title'
           type="text"
           id="thread_title"
           name="thread_title"
@@ -66,7 +58,7 @@ const Formulario = () => {
       </div>
       <div class="d-flex align-items-start flex-column pb-2">
         <label htmlFor="thread_msg"></label>
-        <textarea class="border-0 bg-transparent " placeholder="Type your message"
+        <textarea placeholder="Digite sua mensagem"
           id="thread_msg"
           name="thread_msg"
           value={thread.thread_msg}
@@ -74,9 +66,7 @@ const Formulario = () => {
           required
         />
       </div>
-      <div class="d-flex justify-content-center">
-      <button type="button" class=" btn btn-outline-dark btn-lg" id="botãoTeste">Submit</button>        
-      </div>
+      <button type="button" class=" btn btn-outline-dark" id="botãoTeste">Submit</button>
     </form>
     </div>
     </div>
