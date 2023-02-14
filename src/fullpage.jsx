@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./css/teste.css";
+import "./css/fullpage.css";
 
 const FullPage = () => {
   const [isVisible, setIsVisible] = useState(false);
