@@ -1,0 +1,16 @@
+#container{
+    border-radius: 25px;
+}
+#thread_author{
+    width: 400px;
+}
+#thread_subject{
+    width: 400px;
+}
+#thread_title{
+    width: 400px;
+}
+#thread_msg{
+    width: 400px;
+    height: 200px;
+}
