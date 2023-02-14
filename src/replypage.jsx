@@ -1,43 +1,82 @@
 import anonymousLogo from './assets/anonymous.png'
 import "./css/replypage.css";
+import React, { useState } from 'react';
 
-function Reply() {
-    return (
-      <>
-      <div class="container">
-    <div class="imagem">
-        <img src={anonymousLogo} alt=""/>
+const Formulario = () => {
+  const [thread, setThread] = useState({
+    thread_author: '',
+    thread_subject: '',
+    thread_title: '',
+    thread_msg: ''
+  });
+
+  const handleChange = e => {
+    setThread({ ...thread, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    console.log(thread);
+  };
+
+  return (
+    <>
+    <div className="imagem" >
+    <img src={anonymousLogo} id="imagem"  alt="" to="/landingpage.jsx"/>
     </div>
 
-  <div class="wrapper">
-    <div class="input-box">
-      <div class="tweet-area">
-        <span class="placeholder">O que é que há, velhinho?</span>
-        <div class="input editable" contenteditable="true" spellcheck="false"></div>
-        <div class="input readonly" contenteditable="true" spellcheck="false"></div>
+    <div class="caixaGrande d-flex justify-content-center align-item-center mt-5 mb-5 p-3">
+    <div class="d-flex border border-dark p-3 m-3" id="container">
+
+    <form onSubmit={handleSubmit}>
+      <div class="d-flex align-items-start flex-column p-1 mt-3 mb-3">
+        <label htmlFor="thread_author"></label>
+        <input placeholder='Author'
+          type="text"
+          id="thread_author"
+          name="thread_author"
+          value={thread.thread_author}
+          onChange={handleChange}
+        />
       </div>
-      <div class="privacy">
-        <i class="fas fa-globe-asia"></i>
-        <span>Qualquer pessoa pode responder</span>
+      <div class="d-flex align-items-start flex-column p-1 mb-3">
+        <label htmlFor="thread_subject"></label>
+        <input placeholder='Subject'
+          type="text"
+          id="thread_subject"
+          name="thread_subject"
+          value={thread.thread_subject}
+          onChange={handleChange}
+          required
+        />
       </div>
+      <div class="d-flex align-items-start flex-column p-1 mb-3">
+        <label htmlFor="thread_title"></label>
+        <input placeholder='Title'
+          type="text"
+          id="thread_title"
+          name="thread_title"
+          value={thread.thread_title}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      <div class="d-flex align-items-start flex-column pb-2">
+        <label htmlFor="thread_msg"></label>
+        <textarea placeholder="Digite sua mensagem"
+          id="thread_msg"
+          name="thread_msg"
+          value={thread.thread_msg}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      <button type="button" class=" btn btn-outline-dark" id="botãoTeste">Submit</button>
+    </form>
     </div>
-    <div class="bottom">
-      <ul class="icons">
-        <li><i class="uil uil-capture"></i></li>
-        <li><i class="far fa-file-image"></i></li>
-        <li><i class="fas fa-map-marker-alt"></i></li>
-        <li><i class="far fa-grin"></i></li>
-        <li><i class="far fa-user"></i></li>
-      </ul>
-      <div class="content">
-        <span class="counter">100</span>
-        <button>Enviar</button>
-      </div>
     </div>
-  </div>
-</div>
-      </>
-    );
-  }
-  
-  export default Reply;
+    </>
+  );
+};
+
+export default Formulario;
