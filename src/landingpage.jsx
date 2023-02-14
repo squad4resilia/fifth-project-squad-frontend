@@ -1,5 +1,6 @@
 import "./css/landingpage.css";
 import anonymousLogo from './assets/anonymous.png'
+import AnonymousLogo from './assets/icon.png'
 import facebookLogo from './assets/facebook.svg'
 import twitterLogo from './assets/twitter.svg'
 import instagramLogo from './assets/instagram.svg'
@@ -8,7 +9,7 @@ function Page() {
   return (
     <>
           <div className="imagem">
-          <img src={anonymousLogo} id="imagem"  alt="" />
+          <img src={AnonymousLogo} id="imagem"  alt="" />
         </div>
       <div id="testando">
         <div id="teste">
