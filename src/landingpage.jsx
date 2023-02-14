@@ -20,27 +20,23 @@ function Page() {
               <ul>
                 <h2 className="temas">💻Tech</h2>
                 <li>Programming</li>
-                <li>App</li>
               </ul>
             </div>
             <div>
               <ul>
                 <h2 className="temas">⚽Sports</h2>
                 <li>Soccer</li>
-                <li>E-Sports</li>
               </ul>
             </div>
             <div>
               <ul>
                 <h2 className="temas">🍽Cooking</h2>
                 <li>Brazillian</li>
-                <li>Japonese</li>
               </ul>
             </div>
             <div>
               <ul>
                 <h2 className="temas">🎞Movies</h2>
-                <li>Action</li>
                 <li>Sci-fi</li>
               </ul>
             </div>
