@@ -48,7 +48,7 @@ Abrir o terminal, no terminal colocar "npm i ou npm install" para instalar a pas
 
 ```bash
 ## CLONAR REPOSITÓRIO
-git clone https://github.com/squad4resilia/fifth-project-squad-frontend.git
+git clone https://github.com/squad4resilia/fifth-project-squad-frontend2.git
 
 
 # ENTRAR NA PASTA DO PROJETO FRONT END

@@ -4,6 +4,8 @@ import "./css/fullpage.css";
 
 const FullPage = ({threadData, threadSubject}) => {
   const [threads, setThreads] = useState([]);
+  const [newThreadsComments, setnewThreadsComments] = useState([]);
+
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
@@ -18,8 +20,7 @@ const FullPage = ({threadData, threadSubject}) => {
   return (
     <div className="page">
       {threads.map((thread) => (
-        
-        <div className="thread" key={thread._id}>
+        <div className="thread" key={thread._id} onClick={() => setnewThreadsComments(thread._id)}>
           <div className="thread-info">
             <h2 className="thread-title">{thread.thread_title}</h2>
             <p className="thread-author">{thread.thread_author}</p>
@@ -28,12 +29,31 @@ const FullPage = ({threadData, threadSubject}) => {
           <div className="thread-body">
             <p className="thread-msg">{thread.thread_msg}</p>
           </div>
-        </div>
-        
+        </div>       
       ))}
+      {newThreadsComments && (
+          <CommentAndThread
+            threadComment={newThreadsComments}
+            render={(threadCommentData) => (
+              <FullPage threadCommentData={threadCommentData} threadSubjectandComment={newThreadsComments} />
+            )}
+          />
+        )}
     </div>
   );
 };
 
+function CommentAndThread() {
+  const [threadData, setThreadData] = useState(null);
+
+  useEffect(() => {
+    fetch(`forumapi.onrender.com/thread/subject/${threadSubject}`).then(data => {
+      setThreadData(data);
+      console.log(threadComment)
+    });
+  }, [threadComment]);
+
+  return <FullPage threadData={threadData} threadComment={threadComment} />;
+}
 
 export default FullPage;
